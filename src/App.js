@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Sidebar from "./components/Sidebar.jsx";
 import "./style/css/main.css";
-import menu from "./images/menu.svg";
+import menuBtn from "./images/menu.svg";
 
 class App extends Component {
   constructor() {
@@ -10,23 +10,26 @@ class App extends Component {
     this.toggleOpen = this.toggleOpen.bind(this);
   }
   toggleOpen() {
+    console.log('to');
     this.setState({
       open: !this.state.open
     });
   }
   render() {
+    let open = this.state.open;
+    console.log(open);
     return (
       <div className="App">
-        <div className="mainContent">
+        <div className="mainContent" onClick={open ? this.toggleOpen : null}>
           <img
             onClick={this.toggleOpen}
-            src={menu}
-            alt="menu"
-            className="menu"
-            style={this.state.open ? { display: "none" } : null}
+            src={menuBtn}
+            alt="menuBtn"
+            className="menuBtn"
+            style={open ? { display: "none" } : null}
           />
         </div>
-        <Sidebar open={this.state.open} toggleOpen={this.toggleOpen} />
+        <Sidebar open={open} toggleOpen={this.toggleOpen} />
       </div>
     );
   }

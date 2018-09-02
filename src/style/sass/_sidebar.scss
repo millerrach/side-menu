@@ -18,6 +18,8 @@ $amountOffscreen: -40%;
      height: 100vh;
      position: absolute;
      left: $amountOffscreen;
+     position: relative;
+     z-index: 2;
      .close {
          position: relative;
          float: right;
