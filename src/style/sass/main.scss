@@ -1,0 +1,21 @@
+// @keyframes fadeOut {
+//     from {opacity: 1;}
+//     to {opacity: 0;}
+// }
+
+body {
+    font-family: roboto;
+    .menu {
+        display: inline-block;
+        position: absolute;
+        top: 1.5em;
+        right: 1.5em;
+        animation: fadeOut 1s;
+    }
+}
+
+.mainContent {
+    background-color: red;
+}
+
+@import "sidebar";

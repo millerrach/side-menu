@@ -1,0 +1,52 @@
+$sidebarWidth: 40%;
+$amountOffscreen: -40%;
+
+// @keyframes openSidebar {
+//     from {left: $amountOffscreen;}
+//     to {left: 0;}
+// }
+
+// @keyframes closeSidebar {
+//     from {left: 0;}
+//     to {left: $amountOffscreen;}
+// }
+
+.Sidebar {
+     background-color: #4F86C6;
+     color: #fff;
+     width: $sidebarWidth;
+     height: 100vh;
+     position: absolute;
+     left: $amountOffscreen;
+     .close {
+         position: relative;
+         float: right;
+         top: 1em;
+         right: 1em;
+     }
+     .linksContainer {
+         display: flex;
+         justify-content: center;
+         width: 100%;
+         height: 100vh;
+         align-items: center;
+         .links {
+             display: flex;
+             flex-direction: column;
+             height: 30vh;
+             justify-content: space-around;
+             font-size: 17px;
+         }
+     }
+}
+.openSidebar {
+    left: 0;
+    animation: openSidebar 1s;
+}
+
+.closeSidebar {
+    left: $amountOffscreen;
+    animation: closeSidebar 1s;
+}
+
+
