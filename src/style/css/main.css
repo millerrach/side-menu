@@ -11,18 +11,18 @@ body {
       position: absolute;
       top: 1.5em;
       right: 1.5em;
-      animation: fadeOut 1s; }
+      transition: opacity 0.2s ease-in; }
 
 .Sidebar {
-  background-color: #4F86C6;
+  transform: translateX(-150px);
+  transition: transform 400ms ease-in;
+  background-color: #4f86c6;
   color: #fff;
   width: 40%;
   height: 100vh;
-  position: absolute;
-  left: -40%;
   position: relative;
   z-index: 2; }
-  .Sidebar .close {
+  .Sidebar .closeBtn {
     position: relative;
     float: right;
     top: 1em;
@@ -41,11 +41,9 @@ body {
       font-size: 17px; }
 
 .openSidebar {
-  left: 0;
-  animation: openSidebar 1s; }
+  transform: translateX(0); }
 
 .closeSidebar {
-  left: -40%;
-  animation: closeSidebar 1s; }
+  transform: translateX(-100%); }
 
 /*# sourceMappingURL=main.css.map */

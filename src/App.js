@@ -10,7 +10,7 @@ class App extends Component {
     this.toggleOpen = this.toggleOpen.bind(this);
   }
   toggleOpen() {
-    console.log('to');
+    console.log("to");
     this.setState({
       open: !this.state.open
     });
@@ -26,7 +26,7 @@ class App extends Component {
             src={menuBtn}
             alt="menuBtn"
             className="menuBtn"
-            style={open ? { display: "none" } : null}
+            style={open ? { opacity: 0 } : { opacity: 1 }}
           />
         </div>
         <Sidebar open={open} toggleOpen={this.toggleOpen} />

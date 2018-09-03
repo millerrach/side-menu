@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import close from "../images/close.svg";
+import closeBtn from "../images/close.svg";
 
 class Sidebar extends Component {
   render() {
@@ -8,17 +8,17 @@ class Sidebar extends Component {
       <div className={`Sidebar ${open ? "openSidebar" : "closeSidebar"}`}>
         <img
           onClick={this.props.toggleOpen}
-          src={close}
-          alt="close"
-          className="close"
+          src={closeBtn}
+          alt="closeBtn"
+          className="closeBtn"
         />
         <div className="linksContainer">
-        <div className="links">
-        <div>Oats</div>
-        <div>Berries</div>
-        <div>Coconut Milk</div>
-        <div>Chia Seeds</div>
-        </div>
+          <div className="links">
+            <div>Oats</div>
+            <div>Berries</div>
+            <div>Coconut Milk</div>
+            <div>Chia Seeds</div>
+          </div>
         </div>
       </div>
     );
