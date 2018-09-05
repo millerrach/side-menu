@@ -5,7 +5,10 @@ class Sidebar extends Component {
   render() {
     let open = this.props.open;
     return (
-      <div className={`Sidebar ${open ? "openSidebar" : "closeSidebar"}`}>
+      <div
+        className={`Sidebar ${open ? "openSidebar" : "closeSidebar"}`}
+        style={{ height: document.body.scrollHeight }}
+      >
         <img
           onClick={this.props.toggleOpen}
           src={closeBtn}
@@ -14,10 +17,10 @@ class Sidebar extends Component {
         />
         <div className="linksContainer">
           <div className="links">
-            <div>Oats</div>
-            <div>Berries</div>
-            <div>Coconut Milk</div>
-            <div>Chia Seeds</div>
+            <div>Methods</div>
+            <div>Prototypes</div>
+            <div>Classes</div>
+            <div>Maps</div>
           </div>
         </div>
       </div>

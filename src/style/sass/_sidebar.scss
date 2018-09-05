@@ -1,17 +1,16 @@
 .Sidebar {
   transform: translateX(-150px);
   transition: transform 400ms ease-in;
-  background-color: #4f86c6;
+  background-color: $red;
   color: #fff;
   width: 40%;
-  height: 100vh;
   position: relative;
   z-index: 2;
   .closeBtn {
     position: relative;
     float: right;
-    top: 1em;
-    right: 1em;
+    top: 1.25em;
+    right: 1.25em;
   }
   .linksContainer {
     display: flex;
@@ -25,6 +24,7 @@
       height: 30vh;
       justify-content: space-around;
       font-size: 17px;
+      text-transform: uppercase;
     }
   }
 }

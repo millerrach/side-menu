@@ -1,32 +1,44 @@
 body {
-  font-family: roboto; }
-  body .mainContent {
+  font-family: roboto;
+  color: #4a4a4a; }
+  body .mainPage {
     width: 100%;
     height: 100vh;
     position: absolute;
     top: 0;
-    right: 0; }
-    body .mainContent .menuBtn {
+    right: 0;
+    display: flex;
+    justify-content: center; }
+    body .mainPage .menuBtn {
       display: inline-block;
       position: absolute;
       top: 1.5em;
       right: 1.5em;
       transition: opacity 0.2s ease-in; }
+    body .mainPage .mainContent {
+      padding-top: 10em;
+      width: 80vw; }
+      body .mainPage .mainContent .title {
+        font-size: 2em;
+        font-weight: 500;
+        color: #9d2227;
+        padding-bottom: 0.5em; }
+      body .mainPage .mainContent .paragraph {
+        line-height: 1.5; }
 
 .Sidebar {
   transform: translateX(-150px);
   transition: transform 400ms ease-in;
-  background-color: #4f86c6;
+  background-color: #9d2227;
   color: #fff;
   width: 40%;
-  height: 100vh;
   position: relative;
   z-index: 2; }
   .Sidebar .closeBtn {
     position: relative;
     float: right;
-    top: 1em;
-    right: 1em; }
+    top: 1.25em;
+    right: 1.25em; }
   .Sidebar .linksContainer {
     display: flex;
     justify-content: center;
@@ -38,12 +50,23 @@ body {
       flex-direction: column;
       height: 30vh;
       justify-content: space-around;
-      font-size: 17px; }
+      font-size: 17px;
+      text-transform: uppercase; }
 
 .openSidebar {
   transform: translateX(0); }
 
 .closeSidebar {
   transform: translateX(-100%); }
+
+@media (min-width: 900px) {
+  body .mainPage .mainContentContainer .mainContent {
+    padding-top: 15em;
+    width: 60vw; }
+    body .mainPage .mainContentContainer .mainContent .title {
+      font-size: 4em; }
+
+  .Sidebar {
+    width: 25%; } }
 
 /*# sourceMappingURL=main.css.map */

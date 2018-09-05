@@ -1,11 +1,17 @@
+$red: #9d2227;
+$gray: #4a4a4a;
+
 body {
   font-family: roboto;
-  .mainContent {
+  color: $gray;
+  .mainPage {
     width: 100%;
     height: 100vh;
     position: absolute;
     top: 0;
     right: 0;
+    display: flex;
+    justify-content: center;
     .menuBtn {
       display: inline-block;
       position: absolute;
@@ -13,7 +19,21 @@ body {
       right: 1.5em;
       transition: opacity 0.2s ease-in;
     }
+    .mainContent {
+      padding-top: 10em;  
+      width: 80vw;
+      .title {
+        font-size: 2em;
+        font-weight: 500;
+        color: $red;
+        padding-bottom: 0.5em;
+      }
+      .paragraph {
+        line-height: 1.5;
+      }
+    }
   }
 }
 
 @import "sidebar";
+@import "responsive";
