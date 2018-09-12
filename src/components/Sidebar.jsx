@@ -19,7 +19,6 @@ class Sidebar extends Component {
   }
   render() {
     let open = this.props.open;
-    console.log(this.state.height);
     return (
       <div
         className={`Sidebar ${open ? "openSidebar" : "closeSidebar"}`}
