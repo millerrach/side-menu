@@ -10,14 +10,12 @@ class App extends Component {
     this.toggleOpen = this.toggleOpen.bind(this);
   }
   toggleOpen() {
-    console.log("to");
     this.setState({
       open: !this.state.open
     });
   }
   render() {
     let open = this.state.open;
-    console.log(open);
     return (
       <div>
         <div

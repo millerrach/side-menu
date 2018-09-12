@@ -1,6 +1,10 @@
 $red: #9d2227;
 $gray: #4a4a4a;
 
+::-webkit-scrollbar {
+    display: none;
+  }
+  
 body {
   font-family: roboto;
   color: $gray;
