@@ -30,12 +30,13 @@ body {
         line-height: 1.5; }
 
 .Sidebar {
-  transform: translateX(-150px);
   transition: transform 400ms ease-in;
   background-color: #9d2227;
   color: #fff;
   width: 40%;
-  position: relative;
+  position: fixed;
+  right: 0;
+  top: 0;
   z-index: 2; }
   .Sidebar .closeBtn {
     position: relative;
@@ -60,7 +61,7 @@ body {
   transform: translateX(0); }
 
 .closeSidebar {
-  transform: translateX(-100%); }
+  transform: translateX(110%); }
 
 @media (min-width: 900px) {
   body .mainPage .mainContentContainer .mainContent {
